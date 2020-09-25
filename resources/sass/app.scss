@@ -4,9 +4,16 @@
   box-sizing: border-box;
 }
 
+@import 'partials/header';
 
 body{
   background-color: lightblue;
+
+  .container{
+    justify-content: center;
+    flex-direction: column;
+
+  }
 }
 
-@import('partials/home')
+@import 'partials/home';
