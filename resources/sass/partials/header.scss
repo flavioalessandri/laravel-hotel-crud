@@ -3,8 +3,8 @@
   font-size: 18px;
   padding:30px 0;
   width:100%;
-  min-height: 60px;
-  background-color: black;
+  min-height: 50px;
+  background-color:  #3D405B;
 
   ul{
     list-style-type: none;
@@ -13,14 +13,19 @@
     align-items:center;
     color:white;
 
+    .active{
+      color:red;
+    }
+
     li>a{
       text-decoration: none;
       display: block;
-      color:white;
+      color:#F4F1DE;
       padding:20px 40px;
 
       &:hover{
-        color:red;
+
+        color:#E6DFB3;
       }
     }
   }

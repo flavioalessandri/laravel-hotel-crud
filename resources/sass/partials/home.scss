@@ -1,12 +1,82 @@
 .jumbo {
-
-  font-family: 'Oswald', sans-serif;
   width:100%;
   height:400px;
-  background-color: red;
-
   background-image: url("/img/hotel.png");
   background-size: cover;
   background-position: top center;
-
 }
+
+  .list{
+    padding:40px 0;
+    width:100%;
+
+    ul{
+      margin:auto;
+      width:300px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      a{
+        line-height: 2;
+        text-decoration: none;
+        color:#3D405B;
+      }
+
+    }
+
+  }
+
+  .list-item{
+    padding: 40px;
+    margin:auto;
+    width:800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul{
+      padding: 0 40px;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li{
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .form{
+
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding:40px;
+
+    label{
+      margin-left: 30px;
+      margin-right: 10px;
+    }
+
+    input{
+      width:60px;
+    }
+
+    button{
+      margin-left: 30px;
+      padding:0 20px;
+      color: #f0efeb;
+      background-color: #0F1C2E;
+
+      &:hover{
+        cursor: pointer;
+      }
+
+    }
+
+
+  }

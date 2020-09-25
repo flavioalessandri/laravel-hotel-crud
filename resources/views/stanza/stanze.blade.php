@@ -2,23 +2,30 @@
 
 @section('content')
 
-  <ul>
-
-    <h2>STANZE</h2>
+<section>
 
 
-  @foreach ($stanze as $stanza)
+  <div class="list">
 
-    <li>
-      <a href="{{ route("stanza-info", $stanza->id) }}">
+    <ul>
 
-      Stanza numero: {{$stanza -> room_number}}</li>
-
-    </a>
-
-  @endforeach
-
-  </ul>
+      <h2>STANZE</h2>
 
 
+    @foreach ($stanze as $stanza)
+
+      <li>
+        <a href="{{ route("stanza-info", $stanza->id) }}">
+
+        Stanza numero: {{$stanza -> room_number}}</li>
+
+      </a>
+
+    @endforeach
+
+    </ul>
+
+  </div>
+
+</section>
 @endsection

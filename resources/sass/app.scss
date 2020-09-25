@@ -7,9 +7,11 @@
 @import 'partials/header';
 
 body{
-  background-color: lightblue;
+  font-family: 'Oswald', sans-serif;
+
 
   .container{
+    background-color: #FAF9F0;
     justify-content: center;
     flex-direction: column;
 
@@ -17,3 +19,4 @@ body{
 }
 
 @import 'partials/home';
+@import 'partials/footer';

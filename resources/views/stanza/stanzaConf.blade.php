@@ -2,8 +2,10 @@
 
 @section('content')
 
+  <section>
 
-<h2>a</h2>
+
+
   <form class="form" action="{{ route('stanza-creazione') }}" method="post">
 
     @csrf
@@ -23,5 +25,6 @@
 
   </form>
 
+</section>
 
 @endsection
