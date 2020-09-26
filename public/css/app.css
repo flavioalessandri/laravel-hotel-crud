@@ -22,7 +22,7 @@
 }
 
 #header ul .active {
-  color: red;
+  background-color: red;
 }
 
 #header ul li > a {

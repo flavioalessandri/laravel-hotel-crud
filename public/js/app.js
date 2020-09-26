@@ -19332,19 +19332,22 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-document.addEventListener("DOMContentLoaded", function () {
+function cambiaColore() {
   var ul = document.getElementById("myLink");
   var list = ul.getElementsByTagName("LI");
 
   for (var i = 0; i < list.length; i++) {
-    var elementoLista = list[i];
-    elementoLista.addEventListener("click", function (ev) {
-      var sel = elementoLista.className;
-      console.log(sel); // ev.target.className('active');
-
-      console.log("EV.TARGET", ev.target); // console.log(ev.target.className);
-    });
+    list[i].classList.remove("active");
   }
+
+  var ev = event.target;
+  var liSel = event.target.parentElement;
+  liSel.classList.add("active");
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  var ul = document.getElementById("myLink");
+  ul.addEventListener("click", cambiaColore);
 });
 
 /***/ }),

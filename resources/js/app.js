@@ -2,29 +2,24 @@ require('./bootstrap');
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-
+function cambiaColore(){
   var ul = document.getElementById("myLink");
-
   var list = ul.getElementsByTagName("LI");
 
   for (var i = 0; i < list.length; i++) {
+    list[i].classList.remove("active");
+  }
 
-    var elementoLista = list[i];
-
-  elementoLista.addEventListener("click",function(ev) {
-
-    var sel= elementoLista.className;
-    console.log(sel);
-    // ev.target.className('active');
-
-    console.log("EV.TARGET",ev.target);
-    // console.log(ev.target.className);
-
-})
-
+  var ev=event.target;
+  var liSel = event.target.parentElement
+  liSel.classList.add("active");
 }
 
 
+document.addEventListener('DOMContentLoaded', () => {
 
-})
+
+  var ul = document.getElementById("myLink");
+  ul.addEventListener("click", cambiaColore);
+
+  });
