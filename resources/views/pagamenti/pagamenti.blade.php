@@ -23,7 +23,8 @@
             <i class="fas fa-skull"></i>
           </a>
         </td>
-        <td>Update</td>
+        <td class="edit"><a href="{{route('pagamenti.edit', $pagamento->id)}}">
+        <i class="fas fa-user-edit"></i></a></td>
       </tr>
       @endforeach
 

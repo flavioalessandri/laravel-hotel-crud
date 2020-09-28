@@ -54,30 +54,72 @@ body .container {
   background-position: top center;
 }
 
+.form-section {
+  padding: 40px 0;
+  width: 100%;
+}
+
+.form-section .pag-form {
+  line-height: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section .pag-form button {
+  display: block;
+  text-align: center;
+  width: 175px;
+  padding: 20px 0;
+  color: #f0efeb;
+  align-self: flex-end;
+  background-color: #0F1C2E;
+  margin-top: 20px;
+  margin-right: 58px;
+}
+
+.form-section .pag-form button:hover {
+  cursor: pointer;
+}
+
 .list {
   padding: 40px 0;
   width: 100%;
 }
 
 .list table {
+  padding: 10px;
   text-align: left;
   margin: auto;
   width: 400px;
-  border: 1px solid black;
+  border: 1px solid #3D405B;
 }
 
 .list table th,
 .list table td {
   min-width: 100px;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #3D405B;
 }
 
 .list table tr:last-of-type > td {
   border-bottom: 0;
 }
 
-.list table .delete {
+.list table .delete,
+.list table .edit {
   text-align: center;
+}
+
+.list table i {
+  color: #0F1C2E;
+}
+
+.list table i:hover {
+  color: red;
 }
 
 .list h2 {
