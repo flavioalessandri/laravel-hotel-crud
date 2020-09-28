@@ -59,6 +59,33 @@ body .container {
   width: 100%;
 }
 
+.list table {
+  text-align: left;
+  margin: auto;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.list table th,
+.list table td {
+  min-width: 100px;
+  border-bottom: 3px solid black;
+}
+
+.list table tr:last-of-type > td {
+  border-bottom: 0;
+}
+
+.list table .delete {
+  text-align: center;
+}
+
+.list h2 {
+  margin: auto;
+  width: 400px;
+  padding-bottom: 30px;
+}
+
 .list ul {
   margin: auto;
   width: 300px;

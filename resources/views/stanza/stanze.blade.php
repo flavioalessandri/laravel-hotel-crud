@@ -7,10 +7,10 @@
 
   <div class="list">
 
-    <ul>
 
       <h2>STANZE</h2>
 
+    <ul>
 
     @foreach ($stanze as $stanza)
 

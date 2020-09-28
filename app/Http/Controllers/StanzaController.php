@@ -32,7 +32,7 @@ class StanzaController extends Controller
       // dd($data);
       $request = Stanza::create($data);
 
-      return redirect() -> route('index');
+      return redirect() -> route('stanze.index');
     }
 
 }

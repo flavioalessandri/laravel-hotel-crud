@@ -10,6 +10,39 @@
     padding:40px 0;
     width:100%;
 
+    table{
+      text-align: left;
+      margin:auto;
+      width:400px;
+      border:1px solid black;
+
+      th,td{
+        min-width:100px;
+        border-bottom: 3px solid black;
+
+
+      }
+
+      tr:last-of-type>td{
+        border-bottom: 0;
+      }
+
+      .delete{
+        text-align: center;
+      }
+
+    }
+
+
+
+
+
+    h2{
+      margin: auto;
+      width: 400px;
+      padding-bottom: 30px;
+    }
+
     ul{
       margin:auto;
       width:300px;
